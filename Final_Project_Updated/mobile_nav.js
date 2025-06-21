@@ -15,12 +15,15 @@
     'url("pictures/images10.jpg")'
   ];
 
-  let index = 0;
+    let index = 0;
 
-  function changeBackground() {
-    document.body.style.backgroundImage = images[index];
-    index = (index + 1) % images.length;
-  }
+    function changeBackground() {
+      const sections = document.querySelectorAll('.gift-card-section');
+      sections.forEach(section => {
+        section.style.backgroundImage = images[index];
+      });
+      index = (index + 1) % images.length;
+    }
 
-  setInterval(changeBackground, 5000); // Change every 5 seconds
-  changeBackground(); // Initial call
+    setInterval(changeBackground, 3000); // every 5 seconds
+    changeBackground(); // initial set
