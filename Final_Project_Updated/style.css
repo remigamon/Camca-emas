@@ -30,13 +30,13 @@ html{
   position: relative;
   width: 100%;
   height: 100vh; /* NAK BAGI FULLSCREEN */
-  background-image: url("pictures/4k_western.jpeg");
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+transition: background-image 1s ease-in-out
 }
 .desc{
   font-size: x-large;
